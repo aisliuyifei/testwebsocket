@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <PocketSocket/PSWebSocket.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<PSWebSocketDelegate >{
+    IBOutlet UILabel *label;
+    PSWebSocket *_webSocket;
+}
 
 
 @end
